@@ -1,56 +1,131 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./assets/style.css">
-    <title>Prework Study Guide</title>
-  </head>
-  <body>
-    <header id="top">
-      <h1>Prework Study Guide</h1>
-      <img src="./assets/bowtie-cat.png" alt="Profile image of cat wearing a bow tie." />
-      <h2>✨ Open the Console to See What's Happening ✨</h2>
-    </header>
-    <main>
-      <section class="card" id="html-section">
-        <h2>HTML</h2>
-        <ul>
-          <li>The head element contains information about the webpage.</li>
-          <li>The body element represents the visible content shown to the user</li>
-        </ul>
-      </section>
-      <section class="card" id="css-section">
-        <h2>CSS</h2>
-        <ul><li>Enter your CSS noted here</li></ul>
-        <ul>
-          <li>A margin indicates how much space we want around the outside of an element.</li>
-          <li>A padding indicates how much space we want around the content inside an element.</li>
-        </ul>
-      </section> 
-      <section class="card" id="git-section">
-        <h2>Git</h2>
-        <ul>
-          <li>Enter your Git notes here</li>
-          <li>git status: checks what branch we are currently on</li>
-          <li>git checkout -b branch name: creates a new branch and switches to it
-          </li>
-        </ul>
-      </section>
-      <section class="card" id="javascript-section">
-        <h2>Javascript</h2>
-        <ul>
-          <li>A variable is a named container that allows us to store data in our code.</li>
-          <li>Control flow is the order in which a computer executes code in a script.</li>
-        </ul>
-      </section>
 
-    </main>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./assets/style.css">
+  <title>Prework Study Guide</title>
+</head>
 
-    <footer>
-      <p>I can code!</p>
-    </footer>
-    <script src="./assets/script.js"></script>
-  </body>
+<body>
+  <header id="top">
+    <h1>Prework Study Guide</h1>
+    <img src="./assets/bowtie-cat.png" alt="Profile image of cat wearing a bow tie." />
+    <h2>✨ Open the Console to See What's Happening ✨</h2>
+  </header>
+  <main>
+    <section class="card" id="html-section">
+      <h2>HTML</h2>
+      <ul>
+        <li>Hypertext refers to the way in which web pages are linked together. thats why the link available on a page
+          is called Hypertext.</li>
+        <li>HTML is a markup language meaning it's used to mark up the text document with tags and tells browser what to
+          display.</li>
+        <li>The head element contains information about the webpage.</li>
+        <li>The body element represents the visible content shown to the user</li>
+        <li>The different tags include doctype, html, title, body, h1/h6 AND p. W3C recommends to use lowercase tags.
+        </li>
+        <li>Doctype declaration tag is used to tell the browser what version of HTML is used in the document.</li>
+        <li>Heading tags range in sizes from biggest to smallest- h1 to h6. h1 is the main heading and should only be
+          used once per page.</li>
+        <li>p tag organizes paragraphs of text.</li>
+        <li>The line breaj tag or br makes anything that follows it start from the next line. There must be a space
+          between the characters and the forward slash.</li>
+        <li>Center tag can be used to put any content in the center of the page or table cell.</li>
+        <li>Some elements do not need to be closed by tags. Examples include img, hr, and br.</li>
+        <li>Most html tags can also have attributes. Attributes are used to define characteristics of an html element
+          and are placed in the opening tag.</li>
+        <li>Four core attributes include Id, Title, Class and Style.</li>
+        <li>meta tags can be used to add metadata to your web pages.</li>
+        <li>HTML comments are used to add notes to your code and allow others to understand your code readability. These
+          comments are ignored by the browser.</li>
+      </ul>
+
+    </section>
+    <section class="card" id="css-section">
+      <h2>CSS</h2>
+      <ul>
+        <li>CSS was created by the W3C group called the CSS Working Group. They create documents called specifications and those are later turned into recommendations.</li>
+        <li>CSS syntax contains a selector, followed by the property and value within brackets.</li>
+        <li>Type selectors match the name of any element.</li>
+        <li>Descendent selectors apply a style rule to a particular element only when it lies inside that element.</li>
+        <li>Class selectors can define style rules based on the class attribute of the elements. All of the elements having that class will be formatted to the rule.</li>
+        <li>ID selectos define style rules based on the id attribute of the elements.</li>
+        <li>Chld selectors is similar to descendent selectors except this rule renders all the paragraphs in black if they are direct child of the body element.</li>
+        <li>Inline CSS- You can use the style attribute of any html element to define style rules. These rules will be applied to that element only.</li>
+        <li>External CSS aka link element can be used to include an external stylesheet file in your html document</li>
+        <li>Attributes associated with the style elements are type, href, media etc.</li>
+        <li>CSS measurement units include %, cm, em, ex, in, mm, pc, pt and px.</li>
+        <li>CSS colors or hex codes are a 6 digit representation of the color.</li>
+        <li>A margin indicates how much space we want around the outside of an element.</li>
+        <li>A padding indicates how much space we want around the content inside an element.</li>
+      </ul>
+      
+    </section>
+    <section class="card" id="git-section">
+      <h2>Git</h2>
+      <ul>
+        <li>git config --global user.name “[name]” This command sets username, which aids in reviewing by whom the changes were made. </li>
+        <li>git config --global user.email “[email address]” This command sets an email address, this inturn helps in tracking by whom the commit or merge activity was made.</li>
+        <li>git clone [url] This command is used to obtain the entire repository or download existing source code from the URL provided.</li>
+        <li>git status: checks what branch we are currently on</li>
+        <li>git checkout -b branch name: creates a new branch and switches to it
+        </li>
+        <li>git add [file] This command adds a file from the working tree to the Staging area / current branch.</li>
+        <li>git commit -m “[commit message]” This command records or snapshots the changes permanently in the version history of the repository.</li>
+        <li>git commit -a This command commits all the modified or created files to the repository.</li>
+        <li>git branch This command lists the branches available in the repository.</li>
+        <li>git branch [branch name] This command creates a new branch.</li>
+        <li>git checkout [branch name] This command is used to checkout to the branch specified.</li>
+        <li>git merge [branch name] This command merges specified branches to the current branch.</li>
+        <li>git log This command is used to list the version history for the current branch.</li>
+        <li>git push [variable name] [branch name] This command sends the branch commits to your remote server</li>
+        <li>git pull [repository link] This command fetches and merges changes on the remote server to your working directory. </li>
+      </ul>
+    </section>
+    <section class="card" id="javascript-section">
+      <h2>Javascript</h2>
+      <ul>
+        <li>Javascript is one of the most widely used programming languages (Front-end as well as Back-end).</li>
+        <li>Client-side JavaScript is the most common form of the language. The script should be included in or referenced by an HTML document for the code to be interpreted by the browser.</li>
+        <li>Microsoft FrontPage. Microsoft has developed a popular HTML editor called FrontPage. FrontPage also provides web developers with a number of JavaScript tools to assist in the creation of interactive websites.</li>
+        <li>Macromedia Dreamweaver MX provides several handy prebuilt JavaScript components, integrates well with databases, and conforms to new standards such as XHTML and XML.</li>
+        <li>Macromedia HomeSite 5 is a well-liked HTML and JavaScript editor from Macromedia that can be used to manage personal websites effectively.</li>
+        <li>JavaScript can be implemented using JavaScript statements that are placed within the script HTML tags in a web page.</li>
+        <li>The script tag takes two important attributes: Language and type.</li>
+        <li>JavaScript is a case-sensitive language. This means that the language keywords, variables, function names, and any other identifiers must always be typed with a consistent capitalization of letters.</li>
+        <li>JavaScript supports both C-style and C++-style comments,</li>
+        <li>JS allows you to work with three primitive data types. They are Numbers, Strings and Boolean.</li>
+        <li>JS also defines two trivial data types, null and undefined. Also supports a composite data type known as object.</li>
+        <li>JavaScript has variables. Variables can be thought of as named containers. You can place data into these containers and then refer to the data simply by naming the container.</li>
+        <li>Before you use a variable in a JavaScript program, you must declare it. Variables are declared with the var keyword.</li>
+        <li>Storing a value in a variable is called variable initialization. You can do variable initialization at the time of variable creation or at a later point in time when you need that variable.</li>
+        <li>Arithmetic Operators, Comparison Operators,Logical (or Relational) Operators, Assignment Operators,Conditional (or ternary) Operators</li>
+        <li>JavaScript supports conditional statements which are used to perform different actions based on different conditions. </li>
+        <li>Forms of the if statement: if statement, if...else statement, if...else if... statement</li>
+        <li>List of Javascript frameworks and libraries include: Angular, React, jQuery, Vue.js, Ext.js, Ember, Node.js, etc.</li>
+        <li>The Array object lets you store multiple values in a single variable. It stores a fixed-size sequential collection of elements of the same type. </li>
+        <li> An array is used to store a collection of data, but it is often more useful to think of an array as a collection of variables of the same type.</li>
+        <li>Control flow is the order in which a computer executes code in a script.</li>
+        <li>While writing a program, you may encounter a situation where you need to perform an action over and over again. In such situations, you would need to write loop statements to reduce the number of lines.</li>
+        <li> The purpose of a while loop is to execute a statement or code block repeatedly as long as an expression is true. Once the expression becomes false, the loop terminates.</li>
+        <li>A function is a group of reusable code which can be called anywhere in your program. This eliminates the need of writing the same code again and again.</li>
+        <li>The most common way to define a function in JavaScript is by using the function keyword, followed by a unique function name, a list of parameters (that might be empty), and a statement block surrounded by curly braces.</li>
+        <li>To invoke a function somewhere later in the script, you would simply need to write the name of that function as shown in the following code.</li>
+        <li>Events:JavaScript's interaction with HTML is handled through events that occur when the user or the browser manipulates a page.</li>
+        <li>When the page loads, it is called an event. When the user clicks a button, that click too is an event. Other examples include events like pressing any key, closing a window, resizing a window, etc.</li>
+        <li>The simplest way to create a cookie is to assign a string value to the document.cookie object, which looks like this.</li>
+      </ul>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>I can code!</p>
+  </footer>
+  <script src="./assets/script.js"></script>
+</body>
+
 </html>
